@@ -2,6 +2,7 @@ const express = require("express"),
   // @ts-ignore
   router = new express.Router(),
   User = require("../models/user");
+  router.get('/',async (req,res)=>res.send("Test"))
 router.post("/users", async (req, res) => {
   const user = new User(req.body);
   try {
