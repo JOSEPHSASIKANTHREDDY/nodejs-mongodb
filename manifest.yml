@@ -1,0 +1,4 @@
+---
+applications:
+- name: task-manager
+  command: node src/index.js
